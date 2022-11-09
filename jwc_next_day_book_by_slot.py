@@ -37,8 +37,8 @@ class JWCBooker:
         signOn_button.click()
         # ActionChains(self.driver).move_to_element(signOn_button).click(signOn_button).perform()
 
-        self.driver.find_element(By.ID, 'logon').send_keys('mxuan')
-        self.driver.find_element(By.ID, 'pass').send_keys('753951Fjj.')
+        self.driver.find_element(By.ID, 'logon').send_keys('user')
+        self.driver.find_element(By.ID, 'pass').send_keys('password')
 
         ucla_signIn = self.driver.find_element(By.XPATH, "//*[@id='sso']/form/div/table/tbody/tr/td[1]/button")
         ucla_signIn.click()
